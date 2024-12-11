@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { Hero } from "@/components/hero/hero";
+import { Navbar } from "@/components/navbar/navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <Hero />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6">
+        <Navbar />
         <section className="text-center mb-16">
           <h1 className="text-4xl font-bold text-foreground mb-4">
             Welcome to Our Platform
