@@ -8,7 +8,7 @@ export function Hero() {
         loop
         muted
         className="absolute z-0 w-auto min-w-full min-h-full max-w-none">
-        <source src="/drone.mp4" type="video/mp4" />
+        <source src="/drone2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
