@@ -1,6 +1,7 @@
 import { TracingBeam } from "../ui/tracing-beam";
 import { Background } from "./background";
 import { CallToAction } from "./call-to-action";
+import { Documentation } from "./documentation";
 import { Features } from "./features";
 import { Product } from "./product";
 
@@ -12,6 +13,7 @@ export function Main() {
           <Background />
           <Product />
           <Features />
+          <Documentation />
           <CallToAction />
         </div>
       </TracingBeam>
