@@ -8,7 +8,8 @@ export function Hero() {
         autoPlay
         loop
         muted
-        className="absolute z-0 w-auto min-w-full min-h-full max-w-none">
+        className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+      >
         <source src="/drone2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -24,7 +25,7 @@ export function Hero() {
         <h2 className=" text-4xl md:text-4xl lg:text-6xl font-bold text-gray-300">
           Xypher
         </h2>
-        <Button asChild size="lg" variant="secondary" className="mt-4">
+        <Button asChild size="lg" variant="secondary" className="mt-8">
           <Link href="#background">Get Started</Link>
         </Button>
       </div>
