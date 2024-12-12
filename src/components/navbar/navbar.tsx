@@ -14,44 +14,50 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Anomaly Detection with YOLO and CNN",
+    href: "#features",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Xypher uses YOLO and CNN AI models for fast, accurate anomaly detection.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "Equipped with Edge Computing",
+    href: "#features",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Xypher uses edge computing for real-time, on-site anomaly detection, reducing latency and improving efficiency.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "1TB of Cloud Storage",
+    href: "#features",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Xypher offers 1TB of cloud storage for easy data management and access.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "4K 640x512 PX Camera",
+    href: "#features",
+    description:
+      "The 640x512px 4K camera captures clear, detailed images for precise monitoring.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
+    title: "45 Min Max Flight Time",
+    href: "#features",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "Xypher provides up to 45 minutes of flight time for extended coverage.",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
+    title: "Data Security with AES-256",
+    href: "#features",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "AES-256 encryption ensures all data is securely protected from unauthorized access.",
   },
 ];
 
@@ -82,7 +88,7 @@ function DesktopNav() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Get to Know Us</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
@@ -94,27 +100,23 @@ function DesktopNav() {
                           Xypher
                         </div>
                         <p className="text-sm leading-tight text-muted-foreground">
-                          Description
+                          Security Drone
                         </p>
                       </Link>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/docs" title="Introduction">
-                    Re-usable components built using Radix UI and Tailwind CSS.
+                  <ListItem href="#background" title="Background">
+                    Highlights the need for advanced, real-time anomaly
+                    detection in various industries
                   </ListItem>
-                  <ListItem href="/docs/installation" title="Installation">
-                    How to install dependencies and structure your app.
-                  </ListItem>
-                  <ListItem
-                    href="/docs/primitives/typography"
-                    title="Typography">
-                    Styles for headings, paragraphs, lists...etc
+                  <ListItem href="#our-product" title="Our Product">
+                    Discover the Powerful Capabilities of Xypher
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Features</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                   {components.map((component) => (
@@ -129,7 +131,7 @@ function DesktopNav() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <Link href="#documentation" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Documentation
                 </NavigationMenuLink>
@@ -158,6 +160,7 @@ function MobileNav() {
       <nav className="flex items-center gap-4">
         <ThemeToggle />
         <Sheet>
+          <SheetTitle></SheetTitle>
           <SheetTrigger asChild>
             <Button
               variant="ghost"
@@ -171,17 +174,17 @@ function MobileNav() {
               <Link href="/" className="font-bold">
                 Home
               </Link>
-              <Link href="/docs" className="font-medium">
+              <Link href="#background" className="font-medium">
+                Background
+              </Link>
+              <Link href="#our-product" className="font-medium">
+                Our Product
+              </Link>
+              <Link href="#features" className="font-medium">
+                Features
+              </Link>
+              <Link href="#documentation" className="font-medium">
                 Documentation
-              </Link>
-              <Link href="/docs/components" className="font-medium">
-                Components
-              </Link>
-              <Link href="/examples" className="font-medium">
-                Examples
-              </Link>
-              <Link href="https://github.com" className="font-medium">
-                GitHub
               </Link>
             </div>
           </SheetContent>
