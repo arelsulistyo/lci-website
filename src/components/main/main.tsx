@@ -4,6 +4,7 @@ import { CallToAction } from "./call-to-action";
 import { Documentation } from "./documentation";
 import { Features } from "./features";
 import { Product } from "./product";
+import { Profile } from "./profile";
 
 export function Main() {
   return (
@@ -15,6 +16,7 @@ export function Main() {
           <Features />
           <Documentation />
           <CallToAction />
+          <Profile />
         </div>
       </TracingBeam>
     </main>
