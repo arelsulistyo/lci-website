@@ -53,7 +53,7 @@ function ReportSection() {
           Xypher Drone Solutions Report
         </h2>
         <LinkPreview
-          url="https://drive.google.com/file/d/1zi0adKIeaYF7z13zksUUSGYahHuYTXRI/edit"
+          url="https://drive.google.com/file/d/1bdYRmiHdvfq__P4_pIbS0jyuDpEELgbb/edit"
           className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
         >
           <Paperclip
@@ -65,7 +65,7 @@ function ReportSection() {
       <div className="relative flex-1 bg-neutral-200 dark:bg-slate-800/[0.8] rounded">
         <div className="w-full h-0" style={{ paddingBottom: "56.25%" }}></div>
         <iframe
-          src="https://drive.google.com/file/d/1zi0adKIeaYF7z13zksUUSGYahHuYTXRI/preview"
+          src="https://drive.google.com/file/d/1bdYRmiHdvfq__P4_pIbS0jyuDpEELgbb/preview"
           allow="autoplay"
           className="absolute top-0 left-0 w-full h-full p-4"
         ></iframe>
