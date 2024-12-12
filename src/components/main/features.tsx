@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HoverEffect } from "../ui/card-hover-effect";
+import { Demonstration } from "./demonstration";
 
 export function Features() {
   return (
@@ -10,6 +11,7 @@ export function Features() {
       <div className="max-w-6xl mx-auto">
         <HoverEffect items={projects} />
       </div>
+      <Demonstration />
     </section>
   );
 }
