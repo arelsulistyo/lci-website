@@ -64,7 +64,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function Navbar() {
   return (
     <nav className="flex sticky top-0 z-[10000] w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-12 items-center mx-auto">
+      <div className="container flex h-16 items-center mx-auto">
         <DesktopNav />
         <MobileNav />
       </div>
@@ -95,7 +95,8 @@ function DesktopNav() {
                     <NavigationMenuLink asChild>
                       <Link
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/">
+                        href="/"
+                      >
                         <div className="mb-2 mt-4 text-lg font-medium">
                           Xypher
                         </div>
@@ -123,7 +124,8 @@ function DesktopNav() {
                     <ListItem
                       key={component.title}
                       title={component.title}
-                      href={component.href}>
+                      href={component.href}
+                    >
                       {component.description}
                     </ListItem>
                   ))}
@@ -164,7 +166,8 @@ function MobileNav() {
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className="px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden">
+              className="px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+            >
               <Menu className="h-5 w-5" />
               <span className="sr-only">Toggle Menu</span>
             </Button>
@@ -204,7 +207,8 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground ${className}`}
-          {...props}>
+          {...props}
+        >
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
