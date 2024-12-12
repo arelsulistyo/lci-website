@@ -63,7 +63,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
   return (
-    <nav className="flex sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="flex sticky top-0 z-[10000] w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-12 items-center mx-auto">
         <DesktopNav />
         <MobileNav />
@@ -78,7 +78,7 @@ function DesktopNav() {
       <div className="flex">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
-            src="/xyper-black.svg"
+            src="/xypher-black.svg"
             alt="Xypher Logo"
             width={160}
             height={80}
@@ -150,7 +150,7 @@ function MobileNav() {
     <div className="p-4 flex flex-1 items-center justify-between space-x-2 md:justify-end md:hidden">
       <div className="w-full flex-1 md:w-auto md:flex-none">
         <Image
-          src="/xyper-black.svg"
+          src="/xypher-black.svg"
           alt="Xypher Logo"
           width={160}
           height={90}
